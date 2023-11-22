@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- link do font Awesome -->
+    <script src="https://kit.fontawesome.com/f41f43b525.js" crossorigin="anonymous"></script>
+    
+    <!-- Link do Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Homenaje&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <title>Proj-Pedro</title>
+
+    <!-- link CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Link JS -->
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <div class="conteudo">
+        <header>
+            <div class="centraliza-conteudo header-menu">
+                <button id="menu-hamburger">
+                    <span class="linha"></span>
+                </button>
+
+                <div class="container-menu-hamburger fechado">
+                    <span class="msg-bem-vindo">
+                         Olá seja bem vindo, ...
+                    </span>
+
+                    <h3 class="titulo-menu">
+                        Produtos
+                    </h3>
+                    
+                    <nav class="nav-menu">
+                        <a href="#" class="nav-item">Ofertas</a>
+                        <a href="#" class="nav-item">Mais Vendidos</a>
+                        <a href="#" class="nav-item">Whey Protein</a>
+                        <a href="#" class="nav-item">Pré Treinos</a>
+                        <a href="#" class="nav-item">Creatinas</a>
+                        <a href="#" class="nav-item">Acessórios</a>
+                        <a href="#" class="nav-item">Kits</a>
+                    </nav>
+                </div>
+                
+                <div class="imagem">
+                    <img src="imgs/logo-header.png" alt="logo da página">
+                </div>
+                
+                <div class="menu-direita-header">
+                    <button id="minha-conta-botao">
+                        <i class="fa-solid fa-user"></i>
+                    </button>
+                    
+                    <button id="meu-carrinho-botao">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+
+                    <div class="container-carrinho fechado">
+                        <h3 class="titulo-carrinho">
+                            Meu Carrinho
+                        </h3>
+
+                        <div class="conteudo-carrinho">
+                            <div class="carrinho-card">
+                                <button class="remover-item">
+                                    X
+                                </button>
+                                <div class="img-produto-carrinho">
+                                    <img src="https://placehold.co/100x100" alt="">
+                                </div>
+                                <div class="info-produto-carrinho">
+                                    <span class="nome-produto-carrinho">
+                                        Pré Treino X-Treme 300g
+                                    </span>
+                                    <span class="valor-produto-carrinho">
+                                        R$ 130,50
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="carrinho-card">
+                                <button class="remover-item">
+                                    X
+                                </button>
+                                <div class="img-produto-carrinho">
+                                    <img src="https://placehold.co/100x100" alt="">
+                                </div>
+                                <div class="info-produto-carrinho">
+                                    <span class="nome-produto-carriho">
+                                        Pré Treino X-Treme 300g
+                                    </span>
+                                    <span class="valor-produto-carrinho">
+                                        R$ 130,50
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <span class="valor">Subtotal
+                            <span id="valor-total">
+                                R$ 261,00
+                            </span>
+                        </span>
+
+                        <button id="botao-finalizar-compra">
+                            Finalizar Compra
+                        </button>
+                    </div>
+                </div>
+            </div> <!-- centraliza-conteudo header-menu -->
+        </header>
+
+
+    </div> <!-- conteudo -->
+</body> 
+</html>
