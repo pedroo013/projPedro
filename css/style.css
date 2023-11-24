@@ -21,11 +21,6 @@
     margin: 0 auto;
 }
 
-body{
-    padding: 30px 0;
-    background-color: var(--vermelho-detalhes);
-}
-
 .conteudo {
     background-color: var(--branco-pagina);
     height: 100%;
@@ -35,10 +30,14 @@ body{
 
 header {
     width: 100%;
+    position: fixed;
+    border-top: 20px solid var(--vermelho-detalhes);
+    z-index: 2000;
+    background-color: #fff;
 }
 
 .header-menu {
-    padding: 0 10px;
+    padding: 0 5px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -170,7 +169,7 @@ header {
 }
 
 .imagem img {
-    width: 100px;
+    width: 80px;
 }
 
 .imagem::after,
@@ -299,4 +298,157 @@ header {
     display: none;
 }
 
-/* OPÇÕES DA PÁGINA */
+/* IMAGENS LINKS */
+
+section.imagens-links {
+    width: 100%;
+    padding-top: 100px;
+}
+
+.navegacao-imagens {
+    display: flex;
+    width: 100%;
+    height: 544px;
+    padding:20px 10px;
+    border-bottom: 1px solid var(--preto-conteudo);
+}
+
+.nav-img-item {
+    width: 100%;
+    height: 100%;
+    font-size: 22px;
+    font-style: italic;
+    text-decoration: none;
+    text-align: center;
+    color: var(--branco-pagina);
+    font-weight: 700;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: 40px;
+}
+
+.whey-item, .pre-treino-item, .creatina-item, .acessorios-item {
+    background-size: 100%;
+    background-position: top center;
+    filter: grayscale(100%);
+    transition: 0.5s ease-in-out;
+}
+
+.whey-item:hover, .pre-treino-item:hover, .creatina-item:hover, .acessorios-item:hover {
+    filter: grayscale(0%);
+    background-size: 110%;
+    background-position: top center;
+}
+
+.whey-item:hover, .pre-treino-item:hover, .creatina-item:hover, .acessorios-item:hover {
+    font-size: 30px;
+    box-shadow: 1px 1px 2px #00000041;
+}
+
+.whey-item {
+    background-image: url(../imgs/img-link-whey-protein.png);
+}
+
+.pre-treino-item {
+    background-image: url(../imgs/img-link-pre-treinos.png);
+}
+
+.creatina-item {
+    background-image: url(../imgs/img-link-creatinas.png);
+}
+
+.acessorios-item {
+    background-image: url(../imgs/img-link-acessorios.png);
+}
+
+/* SECAO COMBOS PROMOCIONAIS */
+
+.secao-combos-promo {
+    padding-top: 30px;
+}
+
+.titulo-secao {
+    text-align: center;
+    color: var(--vermelho-detalhes);
+    font-family: 'Inter', sans-serif;
+    font-size: 30px;
+    font-style: italic;
+    font-weight: 900;
+    line-height: normal;
+}
+
+.container-produtos {
+    display: flex;
+    justify-content: space-around;
+    margin: 80px 0 120px 0;
+}
+
+.card-produto {
+    display: flex;
+    width: 20%;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.preco-antigo {
+    margin-left: 10px;
+    color: var(--preto-conteudo);
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 500;
+    line-height: normal;
+    position: relative;
+}
+
+.preco-antigo::after {
+    content: '';
+    width: 110%;
+    height: 3px;
+    background-color: var(--preto-conteudo);
+    position: absolute;
+    left: -5%;
+    top: 40%;
+}
+
+.botao-preco-produto {
+    width: 80%;
+    align-self: center;
+    height: 50px;
+    background-color: var(--vermelho-detalhes);
+    border: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color: var(--branco-pagina);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 30px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: normal;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* RODAPÉ */
+
+footer {
+    background-color: var(--vermelho-detalhes);
+    height: 50px;
+}
+
+.rodape-pagina {
+    height: 100%;
+}
+
+.container-redes-sociais {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 30px;
+    padding-right: 20px;
+}
+
+.container-redes-sociais a {
+    color: var(--branco-pagina);
+    scale: 2;
+}
