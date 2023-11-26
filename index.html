@@ -17,8 +17,9 @@
     <!-- link CSS -->
     <link rel="stylesheet" href="css/style.css">
 
-    <!-- Link JS -->
-    <script src="js/script.js" defer></script>
+    <!-- Links JS -->
+    <script src="js/menu-function.js" defer></script>
+    <script src="js/carrinho-function.js" defer></script>
 </head>
 <body>
     <div class="conteudo">
@@ -29,8 +30,11 @@
                 </button>
 
                 <div class="container-menu-hamburger fechado">
+
+                    <button class="fechar-menu">X</button>
+                    
                     <span class="msg-bem-vindo">
-                         Olá seja bem vindo, <span id="nome-cliente"></span>
+                         Olá seja bem vindo, <span id="nome-cliente">...</span>
                     </span>
 
                     <h3 class="titulo-menu">
@@ -62,6 +66,9 @@
                     </button>
 
                     <div class="container-carrinho fechado">
+
+                        <button class="fechar-carrinho">X</button>
+
                         <h3 class="titulo-carrinho">
                             Meu Carrinho
                         </h3>
