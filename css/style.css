@@ -405,6 +405,7 @@ section.imagens-links {
     display: flex;
     width: 50%;
     align-items: center;
+    justify-content: flex-end;
     flex-direction: column;
     gap: 10px;
 }
