@@ -359,6 +359,8 @@ section.imagens-links {
 
 .whey-item {
     background-image: url(../imgs/img-link-whey-protein.png);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
 }
 
 .pre-treino-item {
@@ -371,6 +373,8 @@ section.imagens-links {
 
 .acessorios-item {
     background-image: url(../imgs/img-link-acessorios.png);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 
 /* SECAO COMBOS PROMOCIONAIS */
