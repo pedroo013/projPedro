@@ -203,6 +203,10 @@ header {
     justify-content: space-between;
 }
 
+#minha-conta-botao a {
+    color: var(--preto-conteudo);
+}
+
 #meu-carrinho-botao {
     z-index: 1000;
 }
@@ -479,4 +483,71 @@ footer {
 .container-redes-sociais a {
     color: var(--branco-pagina);
     scale: 2;
+}
+
+/* CADASTRO */
+
+.main-cadastro div h2{
+    font-family: 'Homenaje', sans-serif;
+    color: var(--preto-conteudo);
+    font-style: normal;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.formulario-cadastro {
+    width: 60%;
+    padding: 50px 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 50px auto;
+    border: 2px solid var(--preto-conteudo);
+    border-radius: 5px;
+}
+
+.input-formulario-cadastro {
+    width: 100%;
+    margin: 5px 0 15px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 2px solid #2f2f2f;
+}
+
+.label-formulario-cadastro {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: normal;
+    font-style: italic;
+}
+
+.btn-cadastro {
+    width: 250px;
+    margin: 30px auto;
+    padding: 20px 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--vermelho-detalhes);
+    color: var(--branco-pagina);
+    font-family: 'Homenaje', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    box-shadow: 0 5px 5px #00000041;
+}
+
+.btn-cadastro:hover {
+    background-color: var(--vermelho-detalhes);
+    opacity: 0.8;
+}
+
+.link-form {
+    align-self: center;
+    color: var(--preto-conteudo);
+    font-family: 'Homenaje', sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 20px;
 }
